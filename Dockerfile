@@ -8,9 +8,9 @@ WORKDIR /root/app
 RUN npm install \ 
  && npm install --dev \
  && npm install bower \
- && npm install -g grunt-cli \
+ && npm -g install grunt-cli \
  && node_modules/bower/bin/bower  --allow-root  install \
- && grunt
+ && grunt build --force
 
 
 
